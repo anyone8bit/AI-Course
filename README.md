@@ -5,7 +5,9 @@ Purpose of the AI Course:
 4.To develop practical skills by applying AI in games, simulations, and simple tools.
 5.To build a strong foundation for advanced AI and machine learning studies.
 
+
 What I Learned from the AI Course?
+
 Throughout this AI course, I have gained a strong foundational understanding of both theoretical concepts and practical applications of Artificial Intelligence. Key topics covered include:
 Basics of AI: Understanding what Artificial Intelligence is and how it simulates human intelligence in machines.
 Applications of AI: Learned about its diverse uses in sectors such as healthcare, education, finance, agriculture, robotics, and natural language processing.
@@ -34,12 +36,19 @@ Applications of NLP: Understood how AI powers chatbots, translators, voice assis
 Duration of the course: 6 Month
 
 Course Supervisor:
+
 Name: Razorshi Prozzwal Talukder
 
-Lecturer,
-North East University Bangladesh,
-Department of CSE,
+Lecturer
+
+North East University Bangladesh
+
+Department of CSE
+
 B.Sc. (Engg.) in CSE, SEC
+
 M.Tech. in CSE, IIT Kharagpur, India
+
 Contact:
+
 Email: rptalukder@neub.edu.bd  
