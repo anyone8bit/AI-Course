@@ -1,4 +1,5 @@
 Purpose of the AI Course:
+
 1.To introduce the fundamentals of Artificial Intelligence, its applications, and core concepts.
 
 2.To understand and implement AI algorithms such as search strategies, game playing, and problem-solving methods.
