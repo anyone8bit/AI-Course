@@ -11,6 +11,7 @@ Purpose of the AI Course:
 5.To build a strong foundation for advanced AI and machine learning studies.
 
 
+
 What I Learned from the AI Course?
 
 Throughout this AI course, I have gained a strong foundational understanding of both theoretical concepts and practical applications of Artificial Intelligence. Key topics covered include:
@@ -62,6 +63,8 @@ Characteristics and Applications of Robots: Studied features like autonomy, sens
 Applications of NLP: Understood how AI powers chatbots, translators, voice assistants, and search engines using NLP.
 
 Duration of the course: 6 Month
+
+
 
 Course Supervisor:
 
