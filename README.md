@@ -60,6 +60,7 @@ Robots & Types: Learned about various types of robots—mobile, industrial, huma
 Characteristics and Applications of Robots: Studied features like autonomy, sensing, and actuation, and how robots are used in factories, defense, healthcare, and more.
 
 Applications of NLP: Understood how AI powers chatbots, translators, voice assistants, and search engines using NLP.
+
 Duration of the course: 6 Month
 
 Course Supervisor:
