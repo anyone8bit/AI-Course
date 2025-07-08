@@ -35,9 +35,10 @@ Duration of the course: 6 Month
 
 Course Supervisor:
 Name: Razorshi Prozzwal Talukder
-Lecturer
-North East University Bangladesh
-Department of CSE
+
+Lecturer,
+North East University Bangladesh,
+Department of CSE,
 B.Sc. (Engg.) in CSE, SEC
 M.Tech. in CSE, IIT Kharagpur, India
 Contact:
