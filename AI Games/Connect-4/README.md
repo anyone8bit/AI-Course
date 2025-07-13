@@ -1,126 +1,145 @@
-1. Prerequisites (Pre-install)
-   Ensure you have the following installed:
+# 🧠 AI-Powered Connect 4 Game
 
-Node.js (v18 or later recommended)
+A strategic two-player Connect 4 game powered by **Alpha-Beta Pruning AI**, built using **Next.js**, **Genkit**, and **Tailwind CSS**.
 
-Download: https://nodejs.org/
+---
 
-npm (comes with Node.js) or Yarn (optional)
+## ✅ 1. Prerequisites (Pre-install)
 
-Install Yarn:
+Ensure the following are installed:
+
+- [Node.js (v18+)](https://nodejs.org/)
+- npm (comes with Node.js) or [Yarn (optional)](https://classic.yarnpkg.com/en/docs/install/)
+- TypeScript (usually included in `devDependencies`)
+- Firebase CLI (if using Firebase features):
+
+```bash
+npm install -g firebase-tools
+To install Yarn (if preferred):
 
 bash
+Copy
+Edit
 npm install -g yarn
-TypeScript (optional, since it's included in devDependencies)
-
-Firebase CLI (if using Firebase features)
-
-bash
-npm install -g firebase-tools 2. Install Dependencies
-Run this command in the project root directory:
+📦 2. Install Dependencies
+Run this in your project root:
 
 bash
+Copy
+Edit
 npm install
-or (if using Yarn):
+Or, if using Yarn:
 
 bash
-yarn install 3. Available Scripts (from package.json)
-Command Description
-npm run dev Starts Next.js in dev mode with Turbopack (port 9002)
-npm run genkit:dev Starts Genkit AI dev server
-npm run genkit:watch Starts Genkit in watch mode
-npm run build Builds the app for production
-npm run start Runs the production build
-npm run lint Runs ESLint for code linting
-npm run typecheck Checks TypeScript types 4. Running the Project
-Development Mode (Hot Reload)
+Copy
+Edit
+yarn install
+🔧 3. Available Scripts
+Command	Description
+npm run dev	Start Next.js in dev mode with Turbopack (port 9002)
+npm run genkit:dev	Start Genkit AI dev server
+npm run genkit:watch	Run Genkit in watch mode for auto reload
+npm run build	Build the app for production
+npm run start	Start production server
+npm run lint	Run ESLint for code linting
+npm run typecheck	Check TypeScript types
+
+🚀 4. Running the Project
+🛠 Development Mode (Hot Reload)
 bash
+Copy
+Edit
 npm run dev
-App runs at: http://localhost:9002
+Visit the app at: http://localhost:9002
 
-Production Build
+⚙️ Production Build
 bash
-npm run build # Build first
-npm run start # Then start the server
-Genkit AI (Optional)
-If using Genkit for AI features:
+Copy
+Edit
+npm run build   # Build the app
+npm run start   # Start server
+🧠 Genkit AI (Optional)
+If using Genkit:
 
 bash
+Copy
+Edit
 npm run genkit:dev
-
 # or
+npm run genkit:watch
+🧰 5. Key Libraries & Frameworks Used
+Next.js – React-based web framework
 
-npm run genkit:watch 5. Key Libraries/Frameworks Used
-Next.js (React framework)
+Tailwind CSS – Utility-first CSS framework
 
-Tailwind CSS (Styling)
+TypeScript – Type safety
 
-TypeScript (Type checking)
+Firebase – Realtime backend services
 
-Firebase (Backend services)
+TanStack Query – Data fetching and caching
 
-TanStack Query (Data fetching)
+Genkit – AI agent toolkit by Google
 
-Genkit (AI toolkit by Google)
+Radix UI – Accessible, customizable UI primitives
 
-Radix UI (Accessible UI components)
-
-6. Environment Variables (.env)
-   If the project uses Genkit, ensure you have a .env file with required keys (e.g., NEXT_PUBLIC_FIREBASE_CONFIG, GOOGLE_AI_API_KEY).
-
-Example .env:
+🔐 6. Environment Variables
+If Genkit is used, include a .env file with your config:
 
 env
+Copy
+Edit
 NEXT_PUBLIC_FIREBASE_API_KEY=your_key
-Troubleshooting
-If npm install fails, try:
-
-bash
-rm -rf node_modules package-lock.json
-npm install
-For Genkit errors, ensure you have valid Google AI API keys.
-
-HOW TO PLAY THE GAME?
+GOOGLE_AI_API_KEY=your_key
+NEXT_PUBLIC_FIREBASE_CONFIG={...}
+🎮 How to Play Connect 4?
 🎯 Objective
-Be the first player to get 4 discs in a row — either vertically, horizontally, or diagonally.
+Be the first to connect 4 discs in a row — horizontally, vertically, or diagonally.
 
 🧩 Game Setup
 Grid: 7 columns × 6 rows
 
-2 Players:
+Two Players:
 
 🟠 Player 1 → Orange discs
 
 🔵 Player 2 → Blue discs
 
-The board starts empty.
+▶️ Gameplay Rules
+Players take turns dropping one disc per move.
 
-▶️ How to Play
-Players take turns.
+Discs fall to the lowest empty space in a column.
 
-On your turn, drop one disc into any of the 7 columns.
+The first to connect 4 in a row wins.
 
-The disc falls to the lowest available space in that column.
+✅ Win Conditions
+➖ Horizontal
 
-The first player to connect 4 of their own discs in a line wins!
+⬇️ Vertical
 
-✅ How to Win
-Get 4 of your own discs in a row:
-
-➖ Horizontally
-
-⬇️ Vertically
-
-➚ or ➘ Diagonally
+➚ / ➘ Diagonal
 
 ⚠️ Draw
-If the board fills up and no one connects 4, the game is a draw.
+If the grid is full and no one connects 4, the game ends in a draw.
 
 🧠 Tips
-Try to build multiple threats.
+Control the center column for maximum reach.
 
-Block your opponent when they have 3 in a row.
+Block your opponent’s 3-in-a-row setups.
 
-Control the center — it gives more possibilities to connect 4.
+Create dual threats that force your opponent to choose.
 
-ALGORITHM USED: ALPHA-BETA
+🤖 Algorithm Used: Alpha-Beta Pruning
+The AI opponent uses Alpha-Beta Pruning, an optimization of the Minimax algorithm, to:
+
+Efficiently explore the game tree
+
+Avoid evaluating unnecessary branches
+
+Make intelligent and fast move decisions
+
+Time Complexity:
+Best Case: O(b<sup>m/2</sup>)
+
+Worst Case: O(b<sup>m</sup>)
+(where b = branching factor, m = max depth)
+
