@@ -14,7 +14,6 @@ Ensure the following are installed:
 - Firebase CLI (if using Firebase features):
 
 ```bash
-npm install -g firebase-tools
 To install Yarn (if preferred):
 
 bash
